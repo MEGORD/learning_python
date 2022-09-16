@@ -8,15 +8,14 @@ second = int(input('Enter second: '))
 third = int(input('Enter third: '))
 fourth = int(input('Enter fourth: '))
 
-if first > second > third > fourth:
-    print('Max - first =', first)
-elif second > first > third > fourth:
-    print('Max - second =', second)
-elif third > first > second > fourth:
-    print('Max - third =', third)
+if first >= second >= third >= fourth:
+    print('Max =', first)
+elif second >= first >= third >= fourth:
+    print('Max =', second)
+elif third >= first >= second >= fourth:
+    print('Max =', third)
 else:
-    print('Max - fourth =', fourth
-
+    print('Max =', fourth)
 '''
 2. Есть девятиэтажный дом, в котором 4 подьезда.
 Номер подьезда начинается с единицы. На одном этаже
@@ -33,6 +32,8 @@ if n_flat > 9 * 4 * 4 or n_flat <= 0:
 else:
     n_entrance = (n_flat - 0.1) / 36
     print('Number of entrance =', int(n_entrance + 1))
+    if (n_flat % 36 == 0):
+        n_flat -= 1
     print('Number of floor =', int(n_flat % 36 / 4 + 1))
 '''
 3. Определить количество дней в году, который вводит пользователь.
