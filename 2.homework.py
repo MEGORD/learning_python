@@ -30,11 +30,14 @@ n_flat = int(input('Enter number of a your flat: '))
 if n_flat > 9 * 4 * 4 or n_flat <= 0:
     print('This apartment does not exist.')
 else:
-    n_entrance = (n_flat - 0.1) / 36
-    print('Number of entrance =', int(n_entrance + 1))
-    if (n_flat % 36 == 0):
-        n_flat -= 1
-    print('Number of floor =', int(n_flat % 36 / 4 + 1))
+    if n_flat % 36 == 0:
+        print('Number of entrance =', int(n_flat / 36))
+    else:
+        print('Number of entrance =', int((n_flat / 36) + 1))
+    if n_flat % 36 % 4 == 0:
+        print('Number of floor = ', int((n_flat - 1) % 36 / 4 + 1))
+    else:
+        print('Number of floor = ', int(n_flat % 36 / 4 + 1))
 '''
 3. Определить количество дней в году, который вводит пользователь.
 В високосном году - 366 дней, тогда как в обычном их 365.
