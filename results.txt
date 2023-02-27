@@ -1,0 +1,11 @@
+Run 1: 0.000000-second
+Run 2: 0.000000-second
+Run 3: 0.000000-second
+Run 4: 0.000000-second
+Run 5: 0.000000-second
+Run 6: 0.000000-second
+Run 7: 0.000000-second
+Run 8: 0.000000-second
+Run 9: 0.000000-second
+Run 10: 0.000000-second
+Average time for 10 runs: 0.000000 second
